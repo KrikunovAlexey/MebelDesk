@@ -31,5 +31,10 @@ namespace MebelDesk
             k.add(sh, ots, dver, kol_dver, height, pol, kol_pol);
             k.show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Login().Show();
+        }
     }
 }
