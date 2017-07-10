@@ -68,11 +68,12 @@ namespace MebelDesk
 
         public void show()
         {
-            switch (stol[0].typeStol)
+            switch (stol[stol.Count - 1].typeStol)
             {
                 case (int)typeStol.Stol_dveri:
-                    Stol_dveri sd = (Stol_dveri)stol[0].classStol;
+                    Stol_dveri sd = (Stol_dveri)stol[stol.Count - 1].classStol;
                     new Show(sd).Show();
+                    stol = new List<Stol>();//временное
                     break;
             }
         }
